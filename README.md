@@ -195,6 +195,8 @@ Each **tab** definition is a separated class definition. It is recommended to pu
 - [ ] Unit Tests for the auto-update code;
 - [ ] Automate tests with GitHub Actions;
 - [ ] Improve README file:
+  * Add screenshots to "Usage" to show the expected result;
+  * Add screenshots to "Settings page structure" and "Sections vs Field Sections";
   * Show badges - tests, phpmd, phpcs, version;
   * Show 2 versions on it: (1) The main version: WC version (used on packagist); (2) Our wrapper code;
   * Full functional example on "Usage - Long Version":  `new WC()` + default WP code to create menus + default WC code to create a settings page;
