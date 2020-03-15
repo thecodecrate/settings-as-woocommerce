@@ -1,0 +1,21 @@
+{
+    "name": "loureirorg/settings-as-woocommerce",
+    "description": "Create WordPress settings pages for your plugin on WooCommerce style.",
+    "type": "package",
+    "require": {
+        "automattic/jetpack-constants": "^1.1"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Daniel Loureiro",
+            "email": "loureiro.rg@gmail.com",
+            "homepage": "https://learnwithdaniel.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SettingsAsWoocommerce\\": "src/"
+        }
+    }
+}
