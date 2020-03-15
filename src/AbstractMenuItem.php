@@ -2,6 +2,9 @@
 /**
  * Class AbstractMenuItem.
  *
+ * TODO:
+ *   * [ ] To update versions on packagist: `git tag v0.0.1` then `git push origin v0.0.1`
+ *
  */
 
 /** Our namespace */
