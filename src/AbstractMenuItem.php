@@ -558,7 +558,7 @@ class AbstractMenuItem {
 		 * `hide_tabs()`:
 		 */
 		if ( $this->hide_tabs ) {
-			$css_show_h1  = ".{$this->slug} .nav-tab-wrapper+h1 { display: block; position: relative; clip-path: none; height: auto; overflow: inherit; width: auto; }";
+			$css_show_h1  = ".{$this->slug} .nav-tab-wrapper+h1 { display: block; position: relative; clip-path: none; height: auto; overflow: inherit; top: inherit; width: auto; }";
 			$css_hide_tab = ".{$this->slug} .nav-tab-wrapper { display: none; }";
 			wp_add_inline_style( $handle_css, "$css_show_h1 $css_hide_tab" );
 		}
