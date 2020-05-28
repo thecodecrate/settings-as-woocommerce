@@ -155,7 +155,13 @@ class WC {
 	 *
 	 * @return string
 	 */
-	public function admin_url( string $path = '', string $scheme = 'admin' ) {
+	public function admin_url( $path = null, $scheme = null ) {
+		/** Some people still use PHP 5.5 and below, which doesn't support
+		 * default arguments, even though WP min requirements is 5.6
+		 * since 2019. */
+		$path   = $path ? $path : '';
+		$scheme = $scheme ? $scheme : 'admin';
+
 		$current_admin_url = admin_url( basename( parse_url( add_query_arg( null, null ), PHP_URL_PATH ) ), $scheme );
 		$query             = parse_url( $path, PHP_URL_QUERY );
 
@@ -223,7 +229,7 @@ class WC {
 
 	/**
 	 * Copied from WC:
-	 *   https://docs.woocommerce.com/wc-apidocs/source-class-WooCommerce.html#245-263
+	 *   https://github.com/woocommerce/woocommerce/blob/master/includes/class-woocommerce.php
 	 *
 	 * To update:
 	 *   * Copy original code;
